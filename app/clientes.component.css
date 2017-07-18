@@ -1,0 +1,54 @@
+cliente-detail{
+float: left;
+display: inline-block;
+margin: 0 20px;
+}
+.selected {
+  background-color: #db6b94 !important;
+  color: white;
+}
+.clientes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  float: left;
+  display: inline-block;
+}
+.clientes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #e02c56;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.clientes li.selected:hover {
+  background-color: #db6b94 !important;
+  color: white;
+}
+.clientes li:hover {
+  color: white;
+  background-color: #d13c72;
+  left: .3em;
+}
+.clientes .text {
+  position: relative;
+  top: -3px;
+}
+.clientes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #9529ad;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

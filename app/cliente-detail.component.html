@@ -1,0 +1,22 @@
+<div *ngIf="client">
+	<h2>{{client.nombre}}</h2>
+<!--     <div>
+    	<label>id: </label>{{client.id}}
+    </div>
+    <div>
+    	<label>nombre: </label>{{client.nombre | uppercase}}
+    </div> -->
+    <!-- <div *ngIf="client.masedes===false"> -->
+        <div *ngFor="let sede of client.sedes">
+            <div>
+                <a href="#">{{sede.nombre | uppercase}}</a>
+            </div>
+            <br>
+            <div *ngFor="let servicio of sede.servicios">
+                {{servicio.tipo | uppercase}} | {{servicio.interfaz}} | {{servicio.velocidad}}Mbps
+            </div>
+            <br><br>
+        </div>
+    <!-- </div> -->
+    <div></div>
+</div>

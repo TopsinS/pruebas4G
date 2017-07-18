@@ -1,0 +1,21 @@
+<h2>Nuevo Cliente</h2>
+<div>
+	<label>id: </label>
+	<input [(ngModel)]="clienten.id" placeholder="ingrese ID"/>
+</div>
+<div>
+	<label>nombre: </label>
+	<input [(ngModel)]="clienten.nombre" placeholder="nombre"/>
+</div>
+<div class="checkbox">
+	<label class="center-block">
+		<input type="checkbox" [(ngModel)]="clienten.masedes">El cliente tiene mas sedes.
+	</label>
+	<button>GUARDAR</button>
+</div>
+
+<div *ngIf="tienesedes">
+	hola mundo
+
+</div>
+
